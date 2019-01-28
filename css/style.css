@@ -291,25 +291,6 @@ nav .navbar {
   background-color: transparent !important;
 }
 
-/* .dots{
-  position: absolute;
-  bottom: 25px;
-  left: 50%;
-  display: inline-block;
-  transform: translateX(-50%);
-}
-.dot{
-  height: 1em;
-  width: 1em;
-  background-color: #bbb;
-  display: inline-block;
-  border-radius: 50%;
-  transition: background-color .6s ease;
-}
-.active, .dot:hover {
-  background-color: #717171;
-} */
-
 #topic .slides .slide-img {
   width: 100%;
   height: 730px;
@@ -638,10 +619,13 @@ nav .navbar {
 #pages {
   display: flex;
   flex-direction: row;
+  height: fit-content;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 #pages .page {
-  height: 340px;
+  height: fit-content;
   position: relative;
   background-position: center;
   background-size: cover;
@@ -650,26 +634,13 @@ nav .navbar {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  max-width: 20%;
+  min-width: 370px;
+  flex-basis: 50%;
 }
-
-#pages .page:nth-child(1) {
-  background-image: url('../images/article4.jpg');
-}
-
-#pages .page:nth-child(2) {
-  background-image: url('../images/article8.png');
-}
-
-#pages .page:nth-child(3) {
-  background-image: url('../images/main_article.jpg');
-}
-
-#pages .page:nth-child(4) {
-  background-image: url('../images/arrticle7.jpg');
-}
-
-#pages .page:nth-child(5) {
-  background-image: url('../images/article3.jpg');
+#pages .page > img{
+  width: 100%;
+  min-width: 370px;
 }
 
 #pages .page:hover .fade-page {
@@ -699,6 +670,12 @@ nav .navbar {
   align-items: center;
   z-index: 1;
   transition: 2s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin-top: 50%;
+  transform: translateY(-50%);
 }
 
 #pages .page .content-page h3 {
@@ -749,10 +726,6 @@ nav .navbar {
   height: 600px;
 }
 
-.shop-slides.slick-initialized.slick-slider {
-  width: 80%;
-}
-
 #shop .header-shop h2 {
   margin-bottom: 15px;
   font-family: 'Montserrat', sans-serif;
@@ -771,14 +744,6 @@ nav .navbar {
   display: block;
   letter-spacing: 2px;
 }
-
-.shop-slides .slick-arrow {
-  background-color: #179bff;
-}
-
-/* #shop .header-shop{
-
-} */
 
 #shop .shop-slides {
   margin-top: 65px;

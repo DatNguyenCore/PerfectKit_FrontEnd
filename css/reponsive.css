@@ -155,6 +155,14 @@
     #pages {
         flex-wrap: wrap;
     }
+    
+    #pages .page{
+        max-width: 50%;
+    }
+
+    #pages .page:last-child{
+        display: none;
+    }
 
     #pages .page .content-page p {
         margin-left: 10%;
@@ -233,6 +241,14 @@
 
     #portfolio-news .portnews-item p.portnews-item-content {
         padding: 0 15px;
+    }
+
+    #pages .page {
+        max-width: 100%;
+    }
+
+    #pages .page{
+        flex-basis: 100%;
     }
 
     #shop .header-shop h2 {

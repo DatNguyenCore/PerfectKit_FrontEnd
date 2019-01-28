@@ -46,6 +46,7 @@
         -ms-transform: translate3d(0, 0, 0);
          -o-transform: translate3d(0, 0, 0);
             transform: translate3d(0, 0, 0);
+    height: 440px;
 }
 
 .slick-track
@@ -101,6 +102,7 @@
 }
 .slick-initialized .slick-slide
 {
+    width: 270px !important;
     display: block;
 }
 .slick-loading .slick-slide
@@ -120,10 +122,17 @@
 }
 button.slick-prev.slick-arrow ,
 button.slick-next.slick-arrow{
-    background-color: #179bff;
-    border-radius: 50%;
-    
+    height: 40px;
+    width: 40px;
     line-height: 40px;
+    background-color: black;
+    opacity: .3;
+}
+
+button.slick-arrow:hover{
+    color: #fff;
+    background-color: #179bff;
+    opacity: 1;
 }
 
 .sub-slide {
